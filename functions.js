@@ -18,7 +18,7 @@ const apis = {
 
 // stores data (value) by key
 async function cache_store(key, value) {
-  // Whenever we store objects into redis, we need to stringify them ahead of time
+
   client.set(key, JSON.stringify(value));
 }
 
